@@ -1,0 +1,28 @@
+core:
+  - all:
+      - changed-files:
+          - any-glob-to-any-file: "lua/cozy/**"
+          - all-globs-to-all-files:
+              - "!lua/cozy/groups/**"
+              - "!lua/cozy/colors/**"
+              - "!lua/cozy/extra/**"
+
+extras:
+  - changed-files:
+      - any-glob-to-any-file: "lua/cozy/extra/**"
+
+groups:
+  - changed-files:
+      - any-glob-to-any-file: "lua/cozy/groups/**"
+
+base:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "lua/cozy/groups/base.lua"
+          - "lua/cozy/groups/kinds.lua"
+          - "lua/cozy/groups/treesitter.lua"
+          - "lua/cozy/groups/semantic_tokens.lua"
+
+colors:
+  - changed-files:
+      - any-glob-to-any-file: "lua/cozy/colors/**"
