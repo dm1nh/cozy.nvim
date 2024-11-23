@@ -6,8 +6,8 @@ M.version = "4.10.0" -- x-release-please-version
 ---@field on_colors fun(colors: ColorScheme)
 ---@field on_highlights fun(highlights: cozy.Highlights, colors: ColorScheme)
 M.defaults = {
-  style = "moon", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
-  accent = "cyan1",
+  style = "groove", -- The theme is coming with multiple themes: "moon", "night" and gruvbox-like theme "groove"
+  accent = "green1",
   transparent = false, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
   styles = {
@@ -47,7 +47,7 @@ M.defaults = {
     auto = true,
     -- add any plugins here that you want to enable
     -- for all possible plugins, see:
-    --   * https://github.com/folke/cozy.nvim/tree/main/lua/cozy/groups
+    --   * https://github.com/dm1nh/cozy.nvim/tree/main/lua/cozy/groups
     -- telescope = true,
   },
 }

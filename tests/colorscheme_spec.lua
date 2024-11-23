@@ -19,7 +19,7 @@ describe("loading respects vim.o.background", function()
     vim.o.background = "dark"
     vim.cmd.colorscheme("cozy")
     assert.same("dark", vim.o.background)
-    assert.same("cozy-moon", vim.g.colors_name)
+    assert.same("cozy-groove", vim.g.colors_name)
   end)
 
   it("= light", function()
@@ -70,7 +70,7 @@ describe("loading respects vim.o.background", function()
     vim.cmd.colorscheme("cozy")
     vim.o.background = "dark"
     assert.same("dark", vim.o.background)
-    assert.same("cozy-moon", vim.g.colors_name)
+    assert.same("cozy-groove", vim.g.colors_name)
   end)
 
   it(" and remembers dark", function()

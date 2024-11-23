@@ -1,13 +1,13 @@
 ---@class Palette
 local ret = {
   -- dark
-  dark = "#121617",
-  dark0 = "#1c2225",
-  dark1 = "#202729",
-  dark2 = "#232b2e",
-  dark3 = "#363d3e",
-  dark4 = "#4d5254",
-  dark5 = "#636869",
+  dark = "#131819",
+  dark0 = "#1e2628",
+  dark1 = "#262f32",
+  dark2 = "#3c4447",
+  dark3 = "#51595b",
+  dark4 = "#676d70",
+  dark5 = "#7d8284",
 
   -- white
   white = "#f7f7f4",
@@ -22,10 +22,10 @@ local ret = {
   grey2 = "#94aaa0",
 
   -- red
-  red = "#733f40",
-  red0 = "#cf7173",
-  red1 = "#e67e80",
-  red2 = "#eb9899",
+  red = "#8c5355",
+  red0 = "#d27d7f",
+  red1 = "#e98b8d",
+  red2 = "#eda2a4",
 
   -- orange
   orange = "#8a5b46",
@@ -52,22 +52,22 @@ local ret = {
   matcha2 = "#a9d4b4",
 
   -- blue
-  blue = "#4e6381",
-  blue0 = "#7595c2",
-  blue1 = "#82a5d7",
-  blue2 = "#9bb7df",
+  blue = "#446390",
+  blue0 = "#6695d8",
+  blue1 = "#71a5f0",
+  blue2 = "#9cc0f5",
 
   -- cyan
-  cyan = "#416c61",
-  cyan0 = "#68ac9b",
-  cyan1 = "#82d6c2",
-  cyan2 = "#a8e3d4",
+  cyan = "#438678",
+  cyan0 = "#64c9b4",
+  cyan1 = "#6fdfc8",
+  cyan2 = "#8ce5d3",
 
   -- purple
-  purple = "#6e5983",
-  purple0 = "#a586c5",
-  purple1 = "#b795db",
-  purple2 = "#c5aae2",
+  purple = "#674c85",
+  purple0 = "#9b72c7",
+  purple1 = "#ac7fdd",
+  purple2 = "#bd99e4",
 
   -- magenta
   magenta = "#88657d",

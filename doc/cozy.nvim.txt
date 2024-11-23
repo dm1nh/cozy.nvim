@@ -3,36 +3,36 @@
 ==============================================================================
 Table of Contents                          *cozy.nvim-table-of-contents*
 
-1. Cozy                                   |cozy.nvim-tokyo-night|
-  - Features                            |cozy.nvim-tokyo-night-features|
-  - Requirements                    |cozy.nvim-tokyo-night-requirements|
-  - Installation                    |cozy.nvim-tokyo-night-installation|
-  - Usage                                  |cozy.nvim-tokyo-night-usage|
-  - Configuration                  |cozy.nvim-tokyo-night-configuration|
-  - Overriding Colors & Highlight Groups|cozy.nvim-tokyo-night-overriding-colors-&-highlight-groups|
-  - Extras                                |cozy.nvim-tokyo-night-extras|
-  - Contributing                    |cozy.nvim-tokyo-night-contributing|
+1. Cozy                                   |cozy.nvim-cozy|
+  - Features                            |cozy.nvim-cozy-features|
+  - Requirements                    |cozy.nvim-cozy-requirements|
+  - Installation                    |cozy.nvim-cozy-installation|
+  - Usage                                  |cozy.nvim-cozy-usage|
+  - Configuration                  |cozy.nvim-cozy-configuration|
+  - Overriding Colors & Highlight Groups|cozy.nvim-cozy-overriding-colors-&-highlight-groups|
+  - Extras                                |cozy.nvim-cozy-extras|
+  - Contributing                    |cozy.nvim-cozy-contributing|
 2. Links                                               |cozy.nvim-links|
 
 ==============================================================================
-1. Cozy                                   *cozy.nvim-tokyo-night*
+1. Cozy                                   *cozy.nvim-cozy*
 
 A dark and light Neovim <https://github.com/neovim/neovim> theme written in Lua
 <https://www.lua.org> ported from the Visual Studio Code TokyoNight
-<https://github.com/enkia/tokyo-night-vscode-theme> theme. Includes
+<https://github.com/enkia/cozy-vscode-theme> theme. Includes
 |cozy.nvim-extra| themes for Kitty
 <https://sw.kovidgoyal.net/kitty/conf.html>, Alacritty
 <https://github.com/alacritty/alacritty>, iTerm <https://iterm2.com/> and Fish
 <https://fishshell.com/docs/current/index.html>.
 
 MoonStormNightDay
-FEATURES                                *cozy.nvim-tokyo-night-features*
+FEATURES                                *cozy.nvim-cozy-features*
 
 - Supports the latest Neovim <https://github.com/neovim/neovim>
     0.9.0 <https://github.com/neovim/neovim/releases/tag/v0.9.0> features.
 - Terminal colors.
 - Supports all major plugins.
-- Provides TokyoNight <https://github.com/folke/cozy.nvim>
+- Provides TokyoNight <https://github.com/dm1nh/cozy.nvim>
     |cozy.nvim-extras| for numerous other applications.
 
 Supported Plugins ~
@@ -248,20 +248,20 @@ Extras ~
   Zellij                              extras/zellij
   -----------------------------------------------------------------------
 
-REQUIREMENTS                        *cozy.nvim-tokyo-night-requirements*
+REQUIREMENTS                        *cozy.nvim-cozy-requirements*
 
 - Neovim <https://github.com/neovim/neovim> >=
     0.8.0 <https://github.com/neovim/neovim/releases/tag/v0.8.0>
 
 
-INSTALLATION                        *cozy.nvim-tokyo-night-installation*
+INSTALLATION                        *cozy.nvim-cozy-installation*
 
 Install the theme with your preferred package manager, such as folke/lazy.nvim
 <https://github.com/folke/lazy.nvim>
 
 >lua
     {
-      "folke/cozy.nvim",
+      "dm1nh/cozy.nvim",
       lazy = false,
       priority = 1000,
       opts = {},
@@ -269,7 +269,7 @@ Install the theme with your preferred package manager, such as folke/lazy.nvim
 <
 
 
-USAGE                                      *cozy.nvim-tokyo-night-usage*
+USAGE                                      *cozy.nvim-cozy-usage*
 
 >lua
     vim.cmd[[colorscheme cozy]]
@@ -324,7 +324,7 @@ LIGHTLINE ~
 <
 
 
-CONFIGURATION                      *cozy.nvim-tokyo-night-configuration*
+CONFIGURATION                      *cozy.nvim-cozy-configuration*
 
 
   [!IMPORTANT] Set the configuration **BEFORE** loading the color scheme with
@@ -335,7 +335,7 @@ The theme offers four styles: |cozy.nvim-storm|, |cozy.nvim-moon|,
 The |cozy.nvim-day| style is used when `{ style = "day" }` is passed to
 `setup(options)` or when `vim.o.background = "light"`.
 
-TokyoNight <https://github.com/folke/cozy.nvim> uses the default options,
+TokyoNight <https://github.com/dm1nh/cozy.nvim> uses the default options,
 unless `setup` is explicitly called.
 
 Default Options ~
@@ -387,14 +387,14 @@ Default Options ~
         auto = true,
         -- add any plugins here that you want to enable
         -- for all possible plugins, see:
-        --   * https://github.com/folke/cozy.nvim/tree/main/lua/cozy/groups
+        --   * https://github.com/dm1nh/cozy.nvim/tree/main/lua/cozy/groups
         -- telescope = true,
       },
     }
 <
 
 
-OVERRIDING COLORS & HIGHLIGHT GROUPS*cozy.nvim-tokyo-night-overriding-colors-&-highlight-groups*
+OVERRIDING COLORS & HIGHLIGHT GROUPS*cozy.nvim-cozy-overriding-colors-&-highlight-groups*
 
 How the highlight groups are calculated:
 
@@ -477,7 +477,7 @@ To have undercurls show up and in color, add the following to your Tmux
 <
 
 
-EXTRAS                                    *cozy.nvim-tokyo-night-extras*
+EXTRAS                                    *cozy.nvim-cozy-extras*
 
 Extra color configs for Kitty <https://sw.kovidgoyal.net/kitty/conf.html>,
 Alacritty <https://github.com/alacritty/alacritty>, Fish
@@ -498,7 +498,7 @@ You can easily use the color palette for other plugins inside your Neovim
 <
 
 
-CONTRIBUTING                        *cozy.nvim-tokyo-night-contributing*
+CONTRIBUTING                        *cozy.nvim-cozy-contributing*
 
 Pull requests are welcome.
 

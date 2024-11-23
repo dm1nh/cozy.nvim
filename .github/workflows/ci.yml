@@ -11,4 +11,4 @@ jobs:
     secrets: inherit
     with:
       plugin: cozy.nvim
-      repo: folke/cozy.nvim
+      repo: dm1nh/cozy.nvim

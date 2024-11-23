@@ -19,7 +19,7 @@ function M.setup(opts)
 
   for group, hl in pairs(groups) do
     hl = type(hl) == "string" and { link = hl } or hl
-    vim.api.nvim_set_hl(0, group, hl)
+    vim.api.nvim_set_hl(0, group, hl --[[@as vim.api.keyset.highlight]])
   end
 
   if opts.terminal_colors then

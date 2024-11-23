@@ -9,33 +9,33 @@ function M.get(style)
   local hl = {}
 
   hl.normal = {
-    a = { bg = colors.blue, fg = colors.black },
+    a = { bg = colors.blue, fg = colors.bg },
     b = { bg = colors.fg_gutter, fg = colors.blue },
-    c = { bg = colors.bg_statusline, fg = colors.fg_sidebar },
+    c = { bg = colors.bg_statusline, fg = colors.fg },
   }
 
   hl.insert = {
-    a = { bg = colors.green, fg = colors.black },
+    a = { bg = colors.green, fg = colors.bg },
     b = { bg = colors.fg_gutter, fg = colors.green },
   }
 
   hl.command = {
-    a = { bg = colors.yellow, fg = colors.black },
+    a = { bg = colors.yellow, fg = colors.bg },
     b = { bg = colors.fg_gutter, fg = colors.yellow },
   }
 
   hl.visual = {
-    a = { bg = colors.magenta, fg = colors.black },
+    a = { bg = colors.magenta, fg = colors.bg },
     b = { bg = colors.fg_gutter, fg = colors.magenta },
   }
 
   hl.replace = {
-    a = { bg = colors.red, fg = colors.black },
+    a = { bg = colors.red, fg = colors.bg },
     b = { bg = colors.fg_gutter, fg = colors.red },
   }
 
   hl.terminal = {
-    a = { bg = colors.green1, fg = colors.black },
+    a = { bg = colors.green1, fg = colors.bg },
     b = { bg = colors.fg_gutter, fg = colors.green1 },
   }
 

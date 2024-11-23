@@ -34,7 +34,7 @@ function M.setup(opts)
   colors.bg_visual = colors.dark4
   colors.bg_search = colors.accent
   colors.bg_statusline = colors.dark
-  colors.fg_gutter = colors.dark5
+  colors.fg_gutter = colors.dark4
   colors.bg_sidebar = opts.styles.sidebars == "dark" and colors.dark0 or colors.none
 
   colors.float = {
@@ -78,19 +78,20 @@ function M.setup(opts)
     comment = colors.grey1,
     constant = colors.orange1,
     deprecated = colors.grey2,
-    field = colors.cyan2,
+    field = colors.matcha1,
     func = colors.blue1,
     identifier = colors.yellow1,
     keyword = colors.purple1,
     number = colors.orange2,
-    operator = colors.purple0,
-    param = colors.red2,
+    operator = colors.purple2,
+    param = colors.red1,
     punct = colors.accent,
-    preproc = colors.red0,
+    preproc = colors.red1,
     regex = colors.blue1,
     special1 = colors.matcha1,
     special2 = colors.red1,
     special3 = colors.cyan1,
+    statement = colors.purple1,
     string = colors.green1,
     type = colors.yellow2,
     variable = colors.white1,

@@ -74,7 +74,7 @@ function M.get(c, opts)
     ["@number"]                     = "Number",
     ["@number.float"]               = "Float",
     ["@operator"]                   = { fg = c.syn.operator }, -- For any operator: `+`, but also `->` and `*` in C.
-    ["@property"]                   = { fg = c.green1 },
+    ["@property"]                   = { fg = c.syn.field },
     ["@punctuation.bracket"]        = { fg = c.fg_dark }, -- For brackets and parens.
     ["@punctuation.delimiter"]      = { fg = c.syn.punct }, -- For delimiters ie: `.`
     ["@punctuation.special"]        = { fg = c.syn.special1 }, -- For special symbols (e.g. `{}` in string interpolation)
@@ -84,20 +84,20 @@ function M.get(c, opts)
     ["@string.escape"]              = { fg = c.orange1 }, -- For escape characters within a string.
     ["@string.regexp"]              = { fg = c.syn.regex }, -- For regexes.
     ["@tag"]                        = "Label",
-    ["@tag.attribute"]              = "@property",
+    ["@tag.attribute"]              = { fg = c.yellow2 },
     ["@tag.delimiter"]              = "Delimiter",
-    ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.blue1, 0.7) },
+    ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.accent, 0.6) },
     ["@tag.tsx"]                    = { fg = c.red1 },
     ["@tag.javascript"]             = { fg = c.red1 },
     ["@type"]                       = "Type",
-    ["@type.builtin"]               = { fg = Util.blend_bg(c.blue1, 0.8) },
+    ["@type.builtin"]               = { fg = Util.blend_bg(c.syn.type, 0.75) },
     ["@type.definition"]            = "Typedef",
     ["@type.qualifier"]             = "@keyword",
-    ["@variable"]                   = { fg = c.fg, style = opts.styles.variables }, -- Any variable name that does not have another highlight.
-    ["@variable.builtin"]           = { fg = c.red1 }, -- Variable names that are defined by the languages, like `this` or `self`.
-    ["@variable.member"]            = { fg = c.green1 }, -- For fields.
-    ["@variable.parameter"]         = { fg = c.yellow1 }, -- For parameters of a function.
-    ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.yellow1, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+    ["@variable"]                   = { fg = c.syn.variable, style = opts.styles.variables }, -- Any variable name that does not have another highlight.
+    ["@variable.builtin"]           = { fg = c.magenta1 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@variable.member"]            = { fg = c.syn.field }, -- For fields.
+    ["@variable.parameter"]         = { fg = c.syn.param }, -- For parameters of a function.
+    ["@variable.parameter.builtin"] = { fg = Util.blend_fg(c.syn.param, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
   }
 
   for i, color in ipairs(c.rainbow) do

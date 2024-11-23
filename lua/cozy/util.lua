@@ -18,6 +18,7 @@ function M.mod(modname)
   if package.loaded[modname] then
     return package.loaded[modname]
   end
+
   local ret = loadfile(me .. "/" .. modname:gsub("%.", "/") .. ".lua")()
   package.loaded[modname] = ret
   return ret
@@ -158,7 +159,7 @@ function M.cache.write(key, data)
 end
 
 function M.cache.clear()
-  for _, style in ipairs({ "storm", "day", "night", "moon" }) do
+  for _, style in ipairs({ "groove", "moon", "night" }) do
     uv.fs_unlink(M.cache.file(style))
   end
 end
