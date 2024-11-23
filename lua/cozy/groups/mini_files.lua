@@ -12,7 +12,7 @@ function M.get(c)
     MiniFilesBorderModified = "DiagnosticFloatingWarn",
     MiniFilesCursorLine     = "CursorLine",
     MiniFilesDirectory      = "Directory",
-    MiniFilesFile           = { fg = c.float.fg },
+    MiniFilesFile           = { fg = c.white2 },
     MiniFilesNormal         = "NormalFloat",
     MiniFilesTitle          = "FloatTitle",
     MiniFilesTitleFocused   = { fg = c.green1, bg = c.float.bg, bold = true },
