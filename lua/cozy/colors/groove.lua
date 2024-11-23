@@ -12,8 +12,8 @@ local ret = {
   -- white
   white = "#fcf5d8",
   white0 = "#fbf1c7",
-  white1 = "#efe2c1",
-  white2 = "#bdae93",
+  white1 = "#ebdbb2",
+  white2 = "#d5c4a1",
 
   -- grey
   grey = "#524a41",
