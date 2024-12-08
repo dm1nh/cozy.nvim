@@ -7,7 +7,7 @@ M.version = "4.10.0" -- x-release-please-version
 ---@field on_highlights fun(highlights: cozy.Highlights, colors: ColorScheme)
 M.defaults = {
   style = "groove", -- The theme is coming with multiple themes: "moon", "night" and gruvbox-like theme "groove"
-  accent = "white1",
+  accent = "green1",
   transparent = false, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
   styles = {
